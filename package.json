@@ -1,0 +1,40 @@
+{
+  "name": "jssetup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prettier": "prettier --write 'src/**/*.{js,jsx}' 'tests/**/*.{js,jsx}'",
+    "coverage": "jest --coverage",
+    "lint": "eslint 'src/**' 'tests/**'",
+    "lint:fix": "eslint 'src/**' 'tests/**' --fix",
+    "format": "prettier --write 'src/**' 'tests/**'"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "tests/**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "keywords": [],
+  "author": "CarlosDlw",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^28.8.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "husky": "^9.1.4",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.3.3"
+  }
+}
