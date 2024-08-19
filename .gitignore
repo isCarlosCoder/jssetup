@@ -29,6 +29,3 @@ coverage/
 
 # ESLint
 .eslintcache
-
-# Prettier
-.prettierrc
